@@ -11,4 +11,4 @@ numTasks: the number of tasks which they must accomplish
 movesUntilRecharge: the number of moves they can make before they need to go and find the nearest charging port
 visual: whether you would like to include the visual pygame simulation
 
-![Screenshot from simulation](./img/sim.png)
+![Screenshot from simulation](./src/img/sim.png)
