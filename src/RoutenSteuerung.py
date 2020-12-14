@@ -110,7 +110,7 @@ class RoutenSteuerung():
 	def generateFahrzeuge(self):
 		self.fahrzeuge = {}
 		for id in self.ids:
-			fz = Fahrzeug(id,self.secondsToPerformMove,self.secondsForCharge,self.movesUntilRecharge, self.visual, self.tileSize)
+			fz = Fahrzeug(id,np.random.randint(0,self.boardLength),np.random.randint(0,self.boardLength),self.secondsToPerformMove,self.secondsForCharge,self.movesUntilRecharge, self.visual, self.tileSize)
 			self.fahrzeuge[id] = fz;
 			self.fzIdToTask[id] = None;
 			print("generated",self.fzIdToTask)

@@ -7,9 +7,9 @@ class Fahrzeug():
 	'''
 	Class representing vehicles in this simulation
 	'''
-	def __init__(self, id,secondsToPerformMove,secondsForRecharge,movesUntilRecharge, visual, tileSize = -1):
-		self.x = np.random.randint(0,10);
-		self.y = np.random.randint(0,10);
+	def __init__(self, id,x,y,secondsToPerformMove,secondsForRecharge,movesUntilRecharge, visual, tileSize = -1):
+		self.x = x;
+		self.y = y;
 		self.visual = visual;
 		self.charging = False;
 		self.id = str(id);

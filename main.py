@@ -2,12 +2,12 @@ from src import *
 
 secondsToPerformMove = 1;
 secondsForCharge = 1;
-numCars = 5;
-numTasks = 10;
+numCars = 30;
+numTasks = 100;
 movesUntilRecharge = 10;
 numChargingStations = 5;
-boardLength = 10;
-tileSize = 40
+boardLength = 20;
+tileSize = 50
 # try:
 # 	numCars = int(input("NumFahrzeuge: "));
 # except:
@@ -18,7 +18,7 @@ tileSize = 40
 # 	numTasks = 5;
 
 # visual = input("Visual? type \"no\" for no, anything else for yes: ") != "no"
-visual = False
+visual = True
 
 
 app = RoutenSteuerung(numCars,numTasks,numChargingStations,movesUntilRecharge,secondsToPerformMove,secondsForCharge,boardLength, visual, tileSize);
