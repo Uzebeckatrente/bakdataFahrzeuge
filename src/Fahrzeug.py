@@ -67,15 +67,15 @@ class Fahrzeug():
 		this method will be triggered
 		:return:
 		'''
-		# print("fz",self.id,"is listening")
 		for mes in self.nextPositionConsumer:
-			self.nextPositionConsumer.consumer_timeout_ms=5000
+			self.nextPositionConsumer.consumer_timeout_ms=10000
 			mesStr = mes.value.decode()
 			mes = json.loads(mesStr);
 			if str(self.id) != mes["vehicleId"]: continue;
 			if int(mes["x"]) == -1 and int(mes["y"]) == -1:
 				print("received desist")
 				break;
+
 
 			while mes["taskId"] != self.currentTask:
 				time.sleep(0.1);
@@ -110,7 +110,7 @@ class Fahrzeug():
 		'''
 
 		for mes in self.newTaskConsumer:
-			self.newTaskConsumer.consumer_timeout_ms = 5000
+			self.newTaskConsumer.consumer_timeout_ms = 10000
 			mesStr = mes.value.decode()
 			mes = json.loads(mesStr);
 			if str(self.id) != mes["vehicleId"]: continue;

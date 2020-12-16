@@ -134,7 +134,7 @@ class RoutenSteuerung():
 		:return:
 		'''
 		for mes in self.lowBatteryConsumer:
-			self.lowBatteryConsumer.consumer_timeout_ms = 5000
+			self.lowBatteryConsumer.consumer_timeout_ms = 10000
 			mes = mes.value.decode()
 			currentFZPosDict = json.loads(mes);
 			fzInQuesetion = currentFZPosDict["vehicleId"]
@@ -244,7 +244,7 @@ class RoutenSteuerung():
 		'''
 
 		for mes in self.positionUpdateConsumer:
-			self.positionUpdateConsumer.consumer_timeout_ms = 5000
+			self.positionUpdateConsumer.consumer_timeout_ms = 10000
 			mes = mes.value.decode()
 			currentFZPosDict = json.loads(mes);
 			self.mainLogFile.write("App received message" + mes + "\n");
