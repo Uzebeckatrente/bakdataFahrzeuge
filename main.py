@@ -10,8 +10,8 @@ tileSize = 50
 visual = False
 np.random.seed(1)
 
-numCars = 100;
-numTasks = 25;
+numCars = 15;
+numTasks = 31;
 
 #initialize app, initialize all threads which listen to the kafka topics
 app = RoutenSteuerung(numCars,numTasks,numChargingStations,movesUntilRecharge,secondsToPerformMove,secondsForCharge,boardLength, visual, tileSize,logsRoute="./logs_for_"+str(numCars)+"_cars_AND_"+str(numTasks)+"_tasks_AND_"+str(numChargingStations)+"_chargingStations_AND_"+str(boardLength)+"_boardLen");
