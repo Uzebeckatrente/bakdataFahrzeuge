@@ -1,0 +1,2 @@
+Car with id 87 intialized
+Car 87 is retired

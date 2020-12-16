@@ -1,0 +1,2 @@
+Car with id 63 intialized
+Car 63 is retired

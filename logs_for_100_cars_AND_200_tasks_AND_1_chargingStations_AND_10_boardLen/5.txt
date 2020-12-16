@@ -1,0 +1,94 @@
+Car with id 5 intialized
+Car 5 received new task: {"taskId": "5", "vehicleId": "5", "startX": "0", "startY": "2", "stopX": "8", "stopY": "2", "timestamp": "2020-12-16 02:38:44.028378"}
+Car 5 received message: {"vehicleId": "5", "taskId": "5", "x": "4", "y": "2", "timestamp": "2020-12-16 02:38:44.199518", "charge": false} in context of task 5
+Car 5 sent current pos: {"vehicleId": "5", "x": "4", "y": "2", "timestamp": "2020-12-16 02:38:44.319071"} in context of task 5
+Car 5 received message: {"vehicleId": "5", "taskId": "5", "x": "3", "y": "2", "timestamp": "2020-12-16 02:38:44.702979", "charge": false} in context of task 5
+Car 5 sent current pos: {"vehicleId": "5", "x": "3", "y": "2", "timestamp": "2020-12-16 02:38:44.953001"} in context of task 5
+Car 5 received message: {"vehicleId": "5", "taskId": "5", "x": "2", "y": "2", "timestamp": "2020-12-16 02:38:45.477508", "charge": false} in context of task 5
+Car 5 sent current pos: {"vehicleId": "5", "x": "2", "y": "2", "timestamp": "2020-12-16 02:38:45.633304"} in context of task 5
+Car 5 received message: {"vehicleId": "5", "taskId": "5", "x": "1", "y": "2", "timestamp": "2020-12-16 02:38:46.271625", "charge": false} in context of task 5
+Car 5 sent current pos: {"vehicleId": "5", "x": "1", "y": "2", "timestamp": "2020-12-16 02:38:46.461034"} in context of task 5
+Car 5 received message: {"vehicleId": "5", "taskId": "5", "x": "0", "y": "2", "timestamp": "2020-12-16 02:38:47.611906", "charge": false} in context of task 5
+Car 5 sent current pos: {"vehicleId": "5", "x": "0", "y": "2", "timestamp": "2020-12-16 02:38:47.751206"} in context of task 5
+Car 5 received message: {"vehicleId": "5", "taskId": "5", "x": "1", "y": "2", "timestamp": "2020-12-16 02:38:49.488545", "charge": false} in context of task 5
+Car 5 sent current pos: {"vehicleId": "5", "x": "1", "y": "2", "timestamp": "2020-12-16 02:38:49.685996"} in context of task 5
+Car 5 received message: {"vehicleId": "5", "taskId": "5", "x": "2", "y": "2", "timestamp": "2020-12-16 02:38:52.151397", "charge": false} in context of task 5
+Car 5 sent current pos: {"vehicleId": "5", "x": "2", "y": "2", "timestamp": "2020-12-16 02:38:52.439895"} in context of task 5
+Car 5 received message: {"vehicleId": "5", "taskId": "5", "x": "3", "y": "2", "timestamp": "2020-12-16 02:38:55.473726", "charge": false} in context of task 5
+Car 5 sent current pos: {"vehicleId": "5", "x": "3", "y": "2", "timestamp": "2020-12-16 02:38:55.662068"} in context of task 5
+Car 5 received message: {"vehicleId": "5", "taskId": "5", "x": "4", "y": "2", "timestamp": "2020-12-16 02:39:00.240018", "charge": false} in context of task 5
+Car 5 sent current pos: {"vehicleId": "5", "x": "4", "y": "2", "timestamp": "2020-12-16 02:39:00.422622"} in context of task 5
+Car 5 received message: {"vehicleId": "5", "taskId": "5", "x": "5", "y": "2", "timestamp": "2020-12-16 02:39:06.182455", "charge": false} in context of task 5
+Car 5 sent critical battery message: "{\"vehicleId\": \"5\"}"
+Car 5 sent current pos: {"vehicleId": "5", "x": "5", "y": "2", "timestamp": "2020-12-16 02:39:06.640923"} in context of task 5
+Car 5 received message: {"vehicleId": "5", "taskId": "5", "x": "5", "y": "3", "timestamp": "2020-12-16 02:39:14.463864", "charge": false} in context of task 5
+Car 5 sent critical battery message: "{\"vehicleId\": \"5\"}"
+Car 5 sent current pos: {"vehicleId": "5", "x": "5", "y": "3", "timestamp": "2020-12-16 02:39:14.706364"} in context of task 5
+Car 5 received message: {"vehicleId": "5", "taskId": "5", "x": "5", "y": "4", "timestamp": "2020-12-16 02:39:24.009856", "charge": false} in context of task 5
+Car 5 sent critical battery message: "{\"vehicleId\": \"5\"}"
+Car 5 sent current pos: {"vehicleId": "5", "x": "5", "y": "4", "timestamp": "2020-12-16 02:39:24.298888"} in context of task 5
+Car 5 received message: {"vehicleId": "5", "taskId": "5", "x": "5", "y": "5", "timestamp": "2020-12-16 02:39:34.672887", "charge": false} in context of task 5
+Car 5 sent critical battery message: "{\"vehicleId\": \"5\"}"
+Car 5 sent current pos: {"vehicleId": "5", "x": "5", "y": "5", "timestamp": "2020-12-16 02:39:35.019190"} in context of task 5
+Car 5 received message: {"vehicleId": "5", "taskId": "5", "x": "5", "y": "6", "timestamp": "2020-12-16 02:39:45.327122", "charge": false} in context of task 5
+Car 5 sent critical battery message: "{\"vehicleId\": \"5\"}"
+Car 5 sent current pos: {"vehicleId": "5", "x": "5", "y": "6", "timestamp": "2020-12-16 02:39:45.616651"} in context of task 5
+Car 5 received message: {"vehicleId": "5", "taskId": "5", "x": "5", "y": "7", "timestamp": "2020-12-16 02:39:54.792216", "charge": false} in context of task 5
+Car 5 sent critical battery message: "{\"vehicleId\": \"5\"}"
+Car 5 sent current pos: {"vehicleId": "5", "x": "5", "y": "7", "timestamp": "2020-12-16 02:39:55.237112"} in context of task 5
+Car 5 received message: {"vehicleId": "5", "taskId": "5", "x": "5", "y": "8", "timestamp": "2020-12-16 02:40:05.721674", "charge": false} in context of task 5
+Car 5 sent critical battery message: "{\"vehicleId\": \"5\"}"
+Car 5 sent current pos: {"vehicleId": "5", "x": "5", "y": "8", "timestamp": "2020-12-16 02:40:06.115852"} in context of task 5
+Car 5 received message: {"vehicleId": "5", "taskId": "5", "x": "5", "y": "8", "timestamp": "2020-12-16 02:40:16.477284", "charge": true} in context of task 5
+Car 5 is charging
+Car 5 sent current pos: {"vehicleId": "5", "x": "5", "y": "8", "timestamp": "2020-12-16 02:40:16.533224"} in context of task 5
+Car 5 received message: {"vehicleId": "5", "taskId": "5", "x": "5", "y": "8", "timestamp": "2020-12-16 02:40:27.160714", "charge": false} in context of task 5
+Car 5 sent current pos: {"vehicleId": "5", "x": "5", "y": "8", "timestamp": "2020-12-16 02:40:27.395721"} in context of task 5
+Car 5 received message: {"vehicleId": "5", "taskId": "5", "x": "6", "y": "7", "timestamp": "2020-12-16 02:40:40.081151", "charge": false} in context of task 5
+Car 5 sent current pos: {"vehicleId": "5", "x": "6", "y": "7", "timestamp": "2020-12-16 02:40:40.236430"} in context of task 5
+Car 5 received message: {"vehicleId": "5", "taskId": "5", "x": "7", "y": "6", "timestamp": "2020-12-16 02:40:50.406614", "charge": false} in context of task 5
+Car 5 sent current pos: {"vehicleId": "5", "x": "7", "y": "6", "timestamp": "2020-12-16 02:40:50.629082"} in context of task 5
+Car 5 received message: {"vehicleId": "5", "taskId": "5", "x": "8", "y": "5", "timestamp": "2020-12-16 02:41:01.017900", "charge": false} in context of task 5
+Car 5 sent current pos: {"vehicleId": "5", "x": "8", "y": "5", "timestamp": "2020-12-16 02:41:01.250379"} in context of task 5
+Car 5 received message: {"vehicleId": "5", "taskId": "5", "x": "8", "y": "4", "timestamp": "2020-12-16 02:41:11.787290", "charge": false} in context of task 5
+Car 5 sent current pos: {"vehicleId": "5", "x": "8", "y": "4", "timestamp": "2020-12-16 02:41:12.021346"} in context of task 5
+Car 5 received message: {"vehicleId": "5", "taskId": "5", "x": "8", "y": "3", "timestamp": "2020-12-16 02:41:22.830618", "charge": false} in context of task 5
+Car 5 sent current pos: {"vehicleId": "5", "x": "8", "y": "3", "timestamp": "2020-12-16 02:41:23.000133"} in context of task 5
+Car 5 received message: {"vehicleId": "5", "taskId": "5", "x": "8", "y": "2", "timestamp": "2020-12-16 02:41:33.484157", "charge": false} in context of task 5
+Car 5 sent current pos: {"vehicleId": "5", "x": "8", "y": "2", "timestamp": "2020-12-16 02:41:33.635228"} in context of task 5
+Car 5 finished task 5 in 24 steps
+
+
+Car 5 received new task: {"taskId": "166", "vehicleId": "5", "startX": "9", "startY": "2", "stopX": "3", "stopY": "8", "timestamp": "2020-12-16 02:41:44.124143"}
+Car 5 received message: {"vehicleId": "5", "taskId": "166", "x": "9", "y": "2", "timestamp": "2020-12-16 02:41:44.194834", "charge": false} in context of task 166
+Car 5 sent current pos: {"vehicleId": "5", "x": "9", "y": "2", "timestamp": "2020-12-16 02:41:44.435937"} in context of task 166
+Car 5 received message: {"vehicleId": "5", "taskId": "166", "x": "8", "y": "3", "timestamp": "2020-12-16 02:41:55.737690", "charge": false} in context of task 166
+Car 5 sent current pos: {"vehicleId": "5", "x": "8", "y": "3", "timestamp": "2020-12-16 02:41:56.059929"} in context of task 166
+Car 5 received message: {"vehicleId": "5", "taskId": "166", "x": "7", "y": "4", "timestamp": "2020-12-16 02:42:06.492155", "charge": false} in context of task 166
+Car 5 sent critical battery message: "{\"vehicleId\": \"5\"}"
+Car 5 sent current pos: {"vehicleId": "5", "x": "7", "y": "4", "timestamp": "2020-12-16 02:42:06.772291"} in context of task 166
+Car 5 received message: {"vehicleId": "5", "taskId": "166", "x": "6", "y": "5", "timestamp": "2020-12-16 02:42:16.610257", "charge": false} in context of task 166
+Car 5 sent critical battery message: "{\"vehicleId\": \"5\"}"
+Car 5 sent current pos: {"vehicleId": "5", "x": "6", "y": "5", "timestamp": "2020-12-16 02:42:16.776121"} in context of task 166
+Car 5 received message: {"vehicleId": "5", "taskId": "166", "x": "5", "y": "6", "timestamp": "2020-12-16 02:42:28.662438", "charge": false} in context of task 166
+Car 5 sent critical battery message: "{\"vehicleId\": \"5\"}"
+Car 5 sent current pos: {"vehicleId": "5", "x": "5", "y": "6", "timestamp": "2020-12-16 02:42:29.032167"} in context of task 166
+Car 5 received message: {"vehicleId": "5", "taskId": "166", "x": "5", "y": "7", "timestamp": "2020-12-16 02:42:39.538696", "charge": false} in context of task 166
+Car 5 sent critical battery message: "{\"vehicleId\": \"5\"}"
+Car 5 sent current pos: {"vehicleId": "5", "x": "5", "y": "7", "timestamp": "2020-12-16 02:42:39.882973"} in context of task 166
+Car 5 received message: {"vehicleId": "5", "taskId": "166", "x": "5", "y": "8", "timestamp": "2020-12-16 02:42:49.348940", "charge": false} in context of task 166
+Car 5 sent critical battery message: "{\"vehicleId\": \"5\"}"
+Car 5 sent current pos: {"vehicleId": "5", "x": "5", "y": "8", "timestamp": "2020-12-16 02:42:49.673476"} in context of task 166
+Car 5 received message: {"vehicleId": "5", "taskId": "166", "x": "5", "y": "8", "timestamp": "2020-12-16 02:42:58.137558", "charge": true} in context of task 166
+Car 5 is charging
+Car 5 sent current pos: {"vehicleId": "5", "x": "5", "y": "8", "timestamp": "2020-12-16 02:42:58.205518"} in context of task 166
+Car 5 received message: {"vehicleId": "5", "taskId": "166", "x": "5", "y": "8", "timestamp": "2020-12-16 02:43:04.881638", "charge": false} in context of task 166
+Car 5 sent current pos: {"vehicleId": "5", "x": "5", "y": "8", "timestamp": "2020-12-16 02:43:05.034015"} in context of task 166
+Car 5 received message: {"vehicleId": "5", "taskId": "166", "x": "4", "y": "8", "timestamp": "2020-12-16 02:43:10.277122", "charge": false} in context of task 166
+Car 5 sent current pos: {"vehicleId": "5", "x": "4", "y": "8", "timestamp": "2020-12-16 02:43:10.421504"} in context of task 166
+Car 5 received message: {"vehicleId": "5", "taskId": "166", "x": "3", "y": "8", "timestamp": "2020-12-16 02:43:15.173295", "charge": false} in context of task 166
+Car 5 sent current pos: {"vehicleId": "5", "x": "3", "y": "8", "timestamp": "2020-12-16 02:43:15.329120"} in context of task 166
+Car 5 finished task 166 in 11 steps
+
+
+Car 5 is retired

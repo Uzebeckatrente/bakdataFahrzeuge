@@ -18,7 +18,7 @@ def arrow(screen, lcolor, tricolor, start, end, trirad, thickness=2):  # adapted
 									   (end[0] + trirad * 4 * math.sin(rotation + 120 * rad),
 										end[1] + trirad * 4 * math.cos(rotation + 120 * rad))))
 
-def doVisual(app, numTilesSide, tileSize):
+def doVisual(app, fahrzeuge, numTilesSide, tileSize):
 	'''
 	Basic pygame chess-board boilerplate, updates every 60th of a second
 	:param app:
@@ -28,6 +28,7 @@ def doVisual(app, numTilesSide, tileSize):
 	'''
 
 	visual = True;
+	counterDown = 60;
 	try:
 
 		if visual:
@@ -60,7 +61,7 @@ def doVisual(app, numTilesSide, tileSize):
 	spaceCounter = 0
 	game_exit = False
 	simulationStarted = False
-	while not game_exit:
+	while not game_exit and counterDown > 0:
 		if visual:
 			for event in pg.event.get():
 				if event.type == pg.QUIT:
@@ -70,13 +71,32 @@ def doVisual(app, numTilesSide, tileSize):
 				app.beginSimulation()
 				simulationStarted = True
 
-
+		if app.finished:
+			counterDown += -1;
 
 		if visual:
 			screen.fill((60, 70, 90))
 			screen.blit(background, (0, 0))
 
 			app.draw(screen, tileSize);
+			for fz in fahrzeuge:
+				fz.draw(screen, tileSize)
+				if fz.id in app.fzIdToTask and app.fzIdToTask[fz.id] != None:
+					if not app.fzIdToTask[fz.id].onHoldBecauseOfBattery:
+						targetX = app.fzIdToTask[fz.id].stopX
+						targetY = app.fzIdToTask[fz.id].stopY;
+						if not app.fzIdToTask[fz.id].initialPositionReached:
+							taskStartX = app.fzIdToTask[fz.id].startX
+							taskStartY = app.fzIdToTask[fz.id].startY;
+							arrow(screen, (220, 123, 40), (0, 255, 0), ((fz.x + 0.5) * tileSize, (fz.y + 0.5) * tileSize), ((taskStartX + 0.5) * tileSize, (taskStartY + 0.5) * tileSize), 2);
+							arrow(screen, (220, 123, 40), (0, 255, 0), ((taskStartX + 0.5) * tileSize, (taskStartY + 0.5) * tileSize), ((targetX + 0.5) * tileSize, (targetY + 0.5) * tileSize), 2);
+						else:
+							arrow(screen, (220, 123, 40), (0, 255, 0), ((fz.x + 0.5) * tileSize, (fz.y + 0.5) * tileSize), ((targetX + 0.5) * tileSize, (targetY + 0.5) * tileSize), 2);
+
+					else:
+						nearestStation = app.findNearestChargingPort(fz.x, fz.y);
+						arrow(screen, (255, 0, 0), (255, 0, 30), ((fz.x + 0.5) * tileSize, (fz.y + 0.5) * tileSize), ((nearestStation.x + 0.5) * tileSize, (nearestStation.y + 0.5) * tileSize), 2);
+
 			pg.display.update()
 
 			clock.tick(60)

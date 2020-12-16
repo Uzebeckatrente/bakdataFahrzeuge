@@ -1,0 +1,49 @@
+Car with id 30 intialized
+Car 30 received new task: {"taskId": "32", "vehicleId": "30", "startX": "2", "startY": "3", "stopX": "9", "stopY": "9", "timestamp": "2020-12-16 02:34:11.058829"}
+Car 30 received message: {"vehicleId": "30", "taskId": "32", "x": "2", "y": "6", "timestamp": "2020-12-16 02:34:11.305697", "charge": false} in context of task 32
+Car 30 sent current pos: {"vehicleId": "30", "x": "2", "y": "6", "timestamp": "2020-12-16 02:34:11.548683"} in context of task 32
+Car 30 received message: {"vehicleId": "30", "taskId": "32", "x": "2", "y": "5", "timestamp": "2020-12-16 02:34:15.324753", "charge": false} in context of task 32
+Car 30 sent current pos: {"vehicleId": "30", "x": "2", "y": "5", "timestamp": "2020-12-16 02:34:15.604312"} in context of task 32
+Car 30 received message: {"vehicleId": "30", "taskId": "32", "x": "2", "y": "4", "timestamp": "2020-12-16 02:34:21.293117", "charge": false} in context of task 32
+Car 30 sent current pos: {"vehicleId": "30", "x": "2", "y": "4", "timestamp": "2020-12-16 02:34:21.457799"} in context of task 32
+Car 30 received message: {"vehicleId": "30", "taskId": "32", "x": "2", "y": "3", "timestamp": "2020-12-16 02:34:28.429940", "charge": false} in context of task 32
+Car 30 sent current pos: {"vehicleId": "30", "x": "2", "y": "3", "timestamp": "2020-12-16 02:34:28.815348"} in context of task 32
+Car 30 received message: {"vehicleId": "30", "taskId": "32", "x": "3", "y": "4", "timestamp": "2020-12-16 02:34:34.304571", "charge": false} in context of task 32
+Car 30 sent current pos: {"vehicleId": "30", "x": "3", "y": "4", "timestamp": "2020-12-16 02:34:34.480228"} in context of task 32
+Car 30 received message: {"vehicleId": "30", "taskId": "32", "x": "4", "y": "5", "timestamp": "2020-12-16 02:34:38.201806", "charge": false} in context of task 32
+Car 30 sent current pos: {"vehicleId": "30", "x": "4", "y": "5", "timestamp": "2020-12-16 02:34:38.333120"} in context of task 32
+Car 30 received message: {"vehicleId": "30", "taskId": "32", "x": "5", "y": "6", "timestamp": "2020-12-16 02:34:41.689436", "charge": false} in context of task 32
+Car 30 sent current pos: {"vehicleId": "30", "x": "5", "y": "6", "timestamp": "2020-12-16 02:34:41.834796"} in context of task 32
+Car 30 received message: {"vehicleId": "30", "taskId": "32", "x": "6", "y": "7", "timestamp": "2020-12-16 02:34:44.624587", "charge": false} in context of task 32
+Car 30 sent current pos: {"vehicleId": "30", "x": "6", "y": "7", "timestamp": "2020-12-16 02:34:44.768477"} in context of task 32
+Car 30 received message: {"vehicleId": "30", "taskId": "32", "x": "7", "y": "8", "timestamp": "2020-12-16 02:34:47.429934", "charge": false} in context of task 32
+Car 30 sent current pos: {"vehicleId": "30", "x": "7", "y": "8", "timestamp": "2020-12-16 02:34:47.571084"} in context of task 32
+Car 30 received message: {"vehicleId": "30", "taskId": "32", "x": "8", "y": "9", "timestamp": "2020-12-16 02:34:49.593273", "charge": false} in context of task 32
+Car 30 sent critical battery message: "{\"vehicleId\": \"30\"}"
+Car 30 sent current pos: {"vehicleId": "30", "x": "8", "y": "9", "timestamp": "2020-12-16 02:34:49.793276"} in context of task 32
+Car 30 received message: {"vehicleId": "30", "taskId": "32", "x": "7", "y": "8", "timestamp": "2020-12-16 02:34:51.315126", "charge": false} in context of task 32
+Car 30 sent critical battery message: "{\"vehicleId\": \"30\"}"
+Car 30 sent current pos: {"vehicleId": "30", "x": "7", "y": "8", "timestamp": "2020-12-16 02:34:51.483485"} in context of task 32
+Car 30 received message: {"vehicleId": "30", "taskId": "32", "x": "6", "y": "8", "timestamp": "2020-12-16 02:34:52.808045", "charge": false} in context of task 32
+Car 30 sent critical battery message: "{\"vehicleId\": \"30\"}"
+Car 30 sent current pos: {"vehicleId": "30", "x": "6", "y": "8", "timestamp": "2020-12-16 02:34:52.978767"} in context of task 32
+Car 30 received message: {"vehicleId": "30", "taskId": "32", "x": "5", "y": "8", "timestamp": "2020-12-16 02:34:54.026782", "charge": false} in context of task 32
+Car 30 sent critical battery message: "{\"vehicleId\": \"30\"}"
+Car 30 sent current pos: {"vehicleId": "30", "x": "5", "y": "8", "timestamp": "2020-12-16 02:34:54.209114"} in context of task 32
+Car 30 received message: {"vehicleId": "30", "taskId": "32", "x": "5", "y": "8", "timestamp": "2020-12-16 02:34:55.173839", "charge": true} in context of task 32
+Car 30 is charging
+Car 30 sent current pos: {"vehicleId": "30", "x": "5", "y": "8", "timestamp": "2020-12-16 02:34:55.188915"} in context of task 32
+Car 30 received message: {"vehicleId": "30", "taskId": "32", "x": "5", "y": "8", "timestamp": "2020-12-16 02:34:56.050446", "charge": false} in context of task 32
+Car 30 sent current pos: {"vehicleId": "30", "x": "5", "y": "8", "timestamp": "2020-12-16 02:34:56.168397"} in context of task 32
+Car 30 received message: {"vehicleId": "30", "taskId": "32", "x": "6", "y": "9", "timestamp": "2020-12-16 02:34:57.121802", "charge": false} in context of task 32
+Car 30 sent current pos: {"vehicleId": "30", "x": "6", "y": "9", "timestamp": "2020-12-16 02:34:57.245991"} in context of task 32
+Car 30 received message: {"vehicleId": "30", "taskId": "32", "x": "7", "y": "9", "timestamp": "2020-12-16 02:34:57.973596", "charge": false} in context of task 32
+Car 30 sent current pos: {"vehicleId": "30", "x": "7", "y": "9", "timestamp": "2020-12-16 02:34:58.110731"} in context of task 32
+Car 30 received message: {"vehicleId": "30", "taskId": "32", "x": "8", "y": "9", "timestamp": "2020-12-16 02:34:58.765823", "charge": false} in context of task 32
+Car 30 sent current pos: {"vehicleId": "30", "x": "8", "y": "9", "timestamp": "2020-12-16 02:34:58.889862"} in context of task 32
+Car 30 received message: {"vehicleId": "30", "taskId": "32", "x": "9", "y": "9", "timestamp": "2020-12-16 02:34:59.446813", "charge": false} in context of task 32
+Car 30 sent current pos: {"vehicleId": "30", "x": "9", "y": "9", "timestamp": "2020-12-16 02:34:59.570639"} in context of task 32
+Car 30 finished task 32 in 19 steps
+
+
+Car 30 is retired

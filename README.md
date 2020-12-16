@@ -1,6 +1,10 @@
 # bakdataFahrzeuge
 
-To run this project, simply execute the command python3 main.py from your terminal
+To run this project, simply execute the command python3 main.py from your terminal.
+
+The program has two modes
+ 
+ 
 
 It has several requirements; these are listed in requirements.txt
 
