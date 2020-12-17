@@ -38,7 +38,12 @@ for f in fahrzeuge:
 time.sleep(1);
 
 if visual:
-	doVisual(app, fahrzeuge,boardLength,tileSize)
+	try:
+		doVisual(app, fahrzeuge,boardLength,tileSize)
+	except Exception as e:
+		print(e);
+		print("This system is unable to handle graphics - please try again in visual mode")
+		exit(-1);
 else:
 	app.beginSimulation();
 
