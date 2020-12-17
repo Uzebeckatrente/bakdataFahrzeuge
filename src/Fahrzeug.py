@@ -136,7 +136,7 @@ class Fahrzeug():
 			# of a task. If this happens, it will sleep until the new task has been processed.
 			while mes["taskId"] != self.currentTask:
 				time.sleep(0.01);
-				print("Wires crossed in task generation; sleeping")
+				print("Wires crossed for car",self.id,"in task generation; sleeping")
 
 			self.logFile.write("Car " + self.id + " received message: " + mesStr+" in context of task " + self.currentTask+"\n");
 
