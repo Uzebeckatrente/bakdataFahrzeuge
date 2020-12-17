@@ -1,4 +1,4 @@
-from .basicFuncs import *;
+from .basicFuncs import pg;
 
 class ChargingStation():
 	'''
@@ -10,12 +10,6 @@ class ChargingStation():
 		if visual:
 			self.gasStationImage = pg.image.load("./src/img/gasPump.png")
 			self.gasStationImage = pg.transform.scale(self.gasStationImage, (int(tileSize * 0.95), int(tileSize * 0.95)))
-
-
-	def putOnHoldBecauseOfBattery(self):
-		self.onHoldBecauseOfBattery = True;
-	def resume(self):
-		self.onHoldBecauseOfBattery = False;
 
 
 	def draw(self, screen, tileSize):

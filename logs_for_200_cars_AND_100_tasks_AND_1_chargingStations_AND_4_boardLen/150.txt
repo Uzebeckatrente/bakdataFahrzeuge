@@ -1,0 +1,2 @@
+Car with id 150 intialized
+Car 150 is retired

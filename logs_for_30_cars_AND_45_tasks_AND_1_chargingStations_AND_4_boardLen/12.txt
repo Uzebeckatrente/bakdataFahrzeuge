@@ -1,0 +1,20 @@
+Car with id 12 intialized
+Car 12 received new task: {"taskId": "12", "vehicleId": "12", "startX": "3", "startY": "3", "stopX": "1", "stopY": "3", "timestamp": "2020-12-17 03:24:15.372361"}
+Car 12 received message: {"vehicleId": "12", "taskId": "12", "x": "3", "y": "3", "timestamp": "2020-12-17 03:24:16.720036", "charge": false} in context of task 12
+Car 12 sent current pos: {"vehicleId": "12", "x": "3", "y": "3", "timestamp": "2020-12-17 03:24:16.844153", "needCharge": false} in context of task 12
+Car 12 received message: {"vehicleId": "12", "taskId": "12", "x": "2", "y": "3", "timestamp": "2020-12-17 03:24:17.097736", "charge": false} in context of task 12
+Car 12 sent current pos: {"vehicleId": "12", "x": "2", "y": "3", "timestamp": "2020-12-17 03:24:17.213714", "needCharge": false} in context of task 12
+Car 12 received message: {"vehicleId": "12", "taskId": "12", "x": "1", "y": "3", "timestamp": "2020-12-17 03:24:17.773479", "charge": false} in context of task 12
+Car 12 sent current pos: {"vehicleId": "12", "x": "1", "y": "3", "timestamp": "2020-12-17 03:24:17.887254", "needCharge": false} in context of task 12
+Car 12 finished task 12 in 3 steps
+
+
+Car 12 received new task: {"taskId": "35", "vehicleId": "12", "startX": "1", "startY": "2", "stopX": "1", "stopY": "1", "timestamp": "2020-12-17 03:24:18.519331"}
+Car 12 received message: {"vehicleId": "12", "taskId": "35", "x": "1", "y": "2", "timestamp": "2020-12-17 03:24:18.540128", "charge": false} in context of task 35
+Car 12 sent current pos: {"vehicleId": "12", "x": "1", "y": "2", "timestamp": "2020-12-17 03:24:18.649125", "needCharge": false} in context of task 35
+Car 12 received message: {"vehicleId": "12", "taskId": "35", "x": "1", "y": "1", "timestamp": "2020-12-17 03:24:19.685720", "charge": false} in context of task 35
+Car 12 sent current pos: {"vehicleId": "12", "x": "1", "y": "1", "timestamp": "2020-12-17 03:24:19.795955", "needCharge": false} in context of task 35
+Car 12 finished task 35 in 2 steps
+
+
+Car 12 is retired

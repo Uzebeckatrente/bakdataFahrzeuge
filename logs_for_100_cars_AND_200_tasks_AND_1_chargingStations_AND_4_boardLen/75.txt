@@ -1,0 +1,20 @@
+Car with id 75 intialized
+Car 75 received new task: {"taskId": "75", "vehicleId": "75", "startX": "1", "startY": "1", "stopX": "0", "stopY": "0", "timestamp": "2020-12-17 03:25:14.964052"}
+Car 75 received message: {"vehicleId": "75", "taskId": "75", "x": "1", "y": "1", "timestamp": "2020-12-17 03:25:25.474604", "charge": false} in context of task 75
+Car 75 sent current pos: {"vehicleId": "75", "x": "1", "y": "1", "timestamp": "2020-12-17 03:25:25.684427", "needCharge": false} in context of task 75
+Car 75 received message: {"vehicleId": "75", "taskId": "75", "x": "0", "y": "0", "timestamp": "2020-12-17 03:25:34.131198", "charge": false} in context of task 75
+Car 75 sent current pos: {"vehicleId": "75", "x": "0", "y": "0", "timestamp": "2020-12-17 03:25:34.320170", "needCharge": false} in context of task 75
+Car 75 finished task 75 in 2 steps
+
+
+Car 75 received new task: {"taskId": "127", "vehicleId": "75", "startX": "2", "startY": "0", "stopX": "1", "stopY": "0", "timestamp": "2020-12-17 03:25:44.984059"}
+Car 75 received message: {"vehicleId": "75", "taskId": "127", "x": "1", "y": "0", "timestamp": "2020-12-17 03:25:45.043632", "charge": false} in context of task 127
+Car 75 sent current pos: {"vehicleId": "75", "x": "1", "y": "0", "timestamp": "2020-12-17 03:25:45.210168", "needCharge": false} in context of task 127
+Car 75 received message: {"vehicleId": "75", "taskId": "127", "x": "2", "y": "0", "timestamp": "2020-12-17 03:25:57.047540", "charge": false} in context of task 127
+Car 75 sent current pos: {"vehicleId": "75", "x": "2", "y": "0", "timestamp": "2020-12-17 03:25:57.240172", "needCharge": false} in context of task 127
+Car 75 received message: {"vehicleId": "75", "taskId": "127", "x": "1", "y": "0", "timestamp": "2020-12-17 03:26:09.636158", "charge": false} in context of task 127
+Car 75 sent current pos: {"vehicleId": "75", "x": "1", "y": "0", "timestamp": "2020-12-17 03:26:09.899529", "needCharge": false} in context of task 127
+Car 75 finished task 127 in 3 steps
+
+
+Car 75 is retired

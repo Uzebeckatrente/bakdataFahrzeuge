@@ -1,0 +1,2 @@
+Car with id 178 intialized
+Car 178 is retired

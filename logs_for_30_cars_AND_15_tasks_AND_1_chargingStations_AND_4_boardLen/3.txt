@@ -1,0 +1,18 @@
+Car with id 3 intialized
+Car 3 received new task: {"taskId": "3", "vehicleId": "3", "startX": "0", "startY": "0", "stopX": "1", "stopY": "3", "timestamp": "2020-12-17 03:23:53.334646"}
+Car 3 received message: {"vehicleId": "3", "taskId": "3", "x": "2", "y": "2", "timestamp": "2020-12-17 03:23:54.516677", "charge": false} in context of task 3
+Car 3 sent current pos: {"vehicleId": "3", "x": "2", "y": "2", "timestamp": "2020-12-17 03:23:54.625122", "needCharge": false} in context of task 3
+Car 3 received message: {"vehicleId": "3", "taskId": "3", "x": "1", "y": "1", "timestamp": "2020-12-17 03:23:54.630834", "charge": false} in context of task 3
+Car 3 sent current pos: {"vehicleId": "3", "x": "1", "y": "1", "timestamp": "2020-12-17 03:23:54.737385", "needCharge": false} in context of task 3
+Car 3 received message: {"vehicleId": "3", "taskId": "3", "x": "0", "y": "0", "timestamp": "2020-12-17 03:23:54.738875", "charge": false} in context of task 3
+Car 3 sent current pos: {"vehicleId": "3", "x": "0", "y": "0", "timestamp": "2020-12-17 03:23:54.845773", "needCharge": false} in context of task 3
+Car 3 received message: {"vehicleId": "3", "taskId": "3", "x": "1", "y": "1", "timestamp": "2020-12-17 03:23:54.860813", "charge": false} in context of task 3
+Car 3 sent current pos: {"vehicleId": "3", "x": "1", "y": "1", "timestamp": "2020-12-17 03:23:54.968892", "needCharge": false} in context of task 3
+Car 3 received message: {"vehicleId": "3", "taskId": "3", "x": "1", "y": "2", "timestamp": "2020-12-17 03:23:54.974917", "charge": false} in context of task 3
+Car 3 sent current pos: {"vehicleId": "3", "x": "1", "y": "2", "timestamp": "2020-12-17 03:23:55.083070", "needCharge": false} in context of task 3
+Car 3 received message: {"vehicleId": "3", "taskId": "3", "x": "1", "y": "3", "timestamp": "2020-12-17 03:23:55.095080", "charge": false} in context of task 3
+Car 3 sent current pos: {"vehicleId": "3", "x": "1", "y": "3", "timestamp": "2020-12-17 03:23:55.198498", "needCharge": false} in context of task 3
+Car 3 finished task 3 in 6 steps
+
+
+Car 3 is retired

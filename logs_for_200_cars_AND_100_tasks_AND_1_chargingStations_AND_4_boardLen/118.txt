@@ -1,0 +1,2 @@
+Car with id 118 intialized
+Car 118 is retired

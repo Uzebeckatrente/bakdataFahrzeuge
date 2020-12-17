@@ -1,0 +1,18 @@
+Car with id 84 intialized
+Car 84 received new task: {"taskId": "84", "vehicleId": "84", "startX": "3", "startY": "3", "stopX": "3", "stopY": "0", "timestamp": "2020-12-17 03:28:39.398697"}
+Car 84 received message: {"vehicleId": "84", "taskId": "84", "x": "1", "y": "1", "timestamp": "2020-12-17 03:29:26.271654", "charge": false} in context of task 84
+Car 84 sent current pos: {"vehicleId": "84", "x": "1", "y": "1", "timestamp": "2020-12-17 03:29:26.556296", "needCharge": false} in context of task 84
+Car 84 received message: {"vehicleId": "84", "taskId": "84", "x": "2", "y": "2", "timestamp": "2020-12-17 03:29:34.472927", "charge": false} in context of task 84
+Car 84 sent current pos: {"vehicleId": "84", "x": "2", "y": "2", "timestamp": "2020-12-17 03:29:34.622976", "needCharge": false} in context of task 84
+Car 84 received message: {"vehicleId": "84", "taskId": "84", "x": "3", "y": "3", "timestamp": "2020-12-17 03:29:41.482305", "charge": false} in context of task 84
+Car 84 sent current pos: {"vehicleId": "84", "x": "3", "y": "3", "timestamp": "2020-12-17 03:29:41.617407", "needCharge": false} in context of task 84
+Car 84 received message: {"vehicleId": "84", "taskId": "84", "x": "3", "y": "2", "timestamp": "2020-12-17 03:29:45.118286", "charge": false} in context of task 84
+Car 84 sent current pos: {"vehicleId": "84", "x": "3", "y": "2", "timestamp": "2020-12-17 03:29:45.279505", "needCharge": false} in context of task 84
+Car 84 received message: {"vehicleId": "84", "taskId": "84", "x": "3", "y": "1", "timestamp": "2020-12-17 03:29:46.831805", "charge": false} in context of task 84
+Car 84 sent current pos: {"vehicleId": "84", "x": "3", "y": "1", "timestamp": "2020-12-17 03:29:46.951532", "needCharge": false} in context of task 84
+Car 84 received message: {"vehicleId": "84", "taskId": "84", "x": "3", "y": "0", "timestamp": "2020-12-17 03:29:47.394042", "charge": false} in context of task 84
+Car 84 sent current pos: {"vehicleId": "84", "x": "3", "y": "0", "timestamp": "2020-12-17 03:29:47.505853", "needCharge": false} in context of task 84
+Car 84 finished task 84 in 6 steps
+
+
+Car 84 is retired

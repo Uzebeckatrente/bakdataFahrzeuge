@@ -1,0 +1,225 @@
+===============
+Initialized simulation with 30 cars, 15 tasks, 1 charging stations, with board of lenth 4
+===============
+Generated car with id 0
+Generated car with id 1
+Generated car with id 2
+Generated car with id 3
+Generated car with id 4
+Generated car with id 5
+Generated car with id 6
+Generated car with id 7
+Generated car with id 8
+Generated car with id 9
+Generated car with id 10
+Generated car with id 11
+Generated car with id 12
+Generated car with id 13
+Generated car with id 14
+Generated car with id 15
+Generated car with id 16
+Generated car with id 17
+Generated car with id 18
+Generated car with id 19
+Generated car with id 20
+Generated car with id 21
+Generated car with id 22
+Generated car with id 23
+Generated car with id 24
+Generated car with id 25
+Generated car with id 26
+Generated car with id 27
+Generated car with id 28
+Generated car with id 29
+New task assigned to 0 starting on 3,1; ending on 2,1
+New task assigned to 1 starting on 1,0; ending on 3,0
+New task assigned to 2 starting on 1,0; ending on 3,2
+New task assigned to 3 starting on 0,1; ending on 0,3
+New task assigned to 4 starting on 1,3; ending on 2,0
+New task assigned to 5 starting on 0,3; ending on 1,2
+New task assigned to 6 starting on 3,2; ending on 3,1
+New task assigned to 7 starting on 0,1; ending on 2,3
+New task assigned to 8 starting on 3,3; ending on 2,1
+New task assigned to 9 starting on 0,1; ending on 3,1
+New task assigned to 10 starting on 3,0; ending on 2,0
+New task assigned to 11 starting on 2,3; ending on 2,3
+New task assigned to 12 starting on 3,1; ending on 3,3
+New task assigned to 13 starting on 3,2; ending on 0,2
+New task assigned to 14 starting on 2,0; ending on 0,3
+App sent message: {"vehicleId": "15", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:53.952312", "charge": false}
+App sent message: {"vehicleId": "16", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:53.998245", "charge": false}
+App sent message: {"vehicleId": "17", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:54.040870", "charge": false}
+App sent message: {"vehicleId": "18", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:54.077348", "charge": false}
+App sent message: {"vehicleId": "19", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:54.112542", "charge": false}
+App sent message: {"vehicleId": "20", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:54.142976", "charge": false}
+App sent message: {"vehicleId": "21", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:54.184774", "charge": false}
+App sent message: {"vehicleId": "22", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:54.215485", "charge": false}
+App sent message: {"vehicleId": "23", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:54.256067", "charge": false}
+App sent message: {"vehicleId": "24", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:54.302603", "charge": false}
+App sent message: {"vehicleId": "25", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:54.335738", "charge": false}
+App sent message: {"vehicleId": "26", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:54.370156", "charge": false}
+App sent message: {"vehicleId": "27", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:54.401198", "charge": false}
+App sent message: {"vehicleId": "28", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:54.431419", "charge": false}
+App sent message: {"vehicleId": "29", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:54.459027", "charge": false}
+App sent message: {"vehicleId": "0", "taskId": "0", "x": "1", "y": "1", "timestamp": "2020-12-17 03:23:54.484760", "charge": false}
+App sent message: {"vehicleId": "1", "taskId": "1", "x": "2", "y": "3", "timestamp": "2020-12-17 03:23:54.500168", "charge": false}
+App sent message: {"vehicleId": "2", "taskId": "2", "x": "2", "y": "3", "timestamp": "2020-12-17 03:23:54.508233", "charge": false}
+App sent message: {"vehicleId": "3", "taskId": "3", "x": "2", "y": "2", "timestamp": "2020-12-17 03:23:54.516677", "charge": false}
+App sent message: {"vehicleId": "4", "taskId": "4", "x": "1", "y": "1", "timestamp": "2020-12-17 03:23:54.525691", "charge": false}
+App sent message: {"vehicleId": "5", "taskId": "5", "x": "0", "y": "1", "timestamp": "2020-12-17 03:23:54.531459", "charge": false}
+App sent message: {"vehicleId": "6", "taskId": "6", "x": "2", "y": "2", "timestamp": "2020-12-17 03:23:54.540494", "charge": false}
+App sent message: {"vehicleId": "7", "taskId": "7", "x": "1", "y": "2", "timestamp": "2020-12-17 03:23:54.545767", "charge": false}
+App sent message: {"vehicleId": "8", "taskId": "8", "x": "3", "y": "2", "timestamp": "2020-12-17 03:23:54.551043", "charge": false}
+App sent message: {"vehicleId": "9", "taskId": "9", "x": "1", "y": "3", "timestamp": "2020-12-17 03:23:54.558417", "charge": false}
+App sent message: {"vehicleId": "10", "taskId": "10", "x": "3", "y": "2", "timestamp": "2020-12-17 03:23:54.562894", "charge": false}
+App sent message: {"vehicleId": "11", "taskId": "11", "x": "2", "y": "2", "timestamp": "2020-12-17 03:23:54.566916", "charge": false}
+App sent message: {"vehicleId": "12", "taskId": "12", "x": "3", "y": "3", "timestamp": "2020-12-17 03:23:54.569194", "charge": false}
+App sent message: {"vehicleId": "13", "taskId": "13", "x": "2", "y": "0", "timestamp": "2020-12-17 03:23:54.571837", "charge": false}
+App sent message: {"vehicleId": "14", "taskId": "14", "x": "2", "y": "1", "timestamp": "2020-12-17 03:23:54.574797", "charge": false}
+App received message{"vehicleId": "0", "x": "1", "y": "1", "timestamp": "2020-12-17 03:23:54.597227", "needCharge": false}
+App sent message: {"vehicleId": "0", "taskId": "0", "x": "2", "y": "2", "timestamp": "2020-12-17 03:23:54.601759", "charge": false}
+App received message{"vehicleId": "1", "x": "2", "y": "3", "timestamp": "2020-12-17 03:23:54.613499", "needCharge": false}
+App sent message: {"vehicleId": "1", "taskId": "1", "x": "1", "y": "3", "timestamp": "2020-12-17 03:23:54.616829", "charge": false}
+App received message{"vehicleId": "2", "x": "2", "y": "3", "timestamp": "2020-12-17 03:23:54.619637", "needCharge": false}
+App sent message: {"vehicleId": "2", "taskId": "2", "x": "1", "y": "3", "timestamp": "2020-12-17 03:23:54.623627", "charge": false}
+App received message{"vehicleId": "3", "x": "2", "y": "2", "timestamp": "2020-12-17 03:23:54.625122", "needCharge": false}
+App sent message: {"vehicleId": "3", "taskId": "3", "x": "1", "y": "1", "timestamp": "2020-12-17 03:23:54.630834", "charge": false}
+App received message{"vehicleId": "4", "x": "1", "y": "1", "timestamp": "2020-12-17 03:23:54.634760", "needCharge": false}
+App sent message: {"vehicleId": "4", "taskId": "4", "x": "1", "y": "2", "timestamp": "2020-12-17 03:23:54.637209", "charge": false}
+App received message{"vehicleId": "5", "x": "0", "y": "1", "timestamp": "2020-12-17 03:23:54.642833", "needCharge": false}
+Car 5 reached initial position for its task; now moving towards destination
+App sent message: {"vehicleId": "5", "taskId": "5", "x": "1", "y": "2", "timestamp": "2020-12-17 03:23:54.646695", "charge": false}
+App received message{"vehicleId": "6", "x": "2", "y": "2", "timestamp": "2020-12-17 03:23:54.645726", "needCharge": false}
+App sent message: {"vehicleId": "6", "taskId": "6", "x": "3", "y": "3", "timestamp": "2020-12-17 03:23:54.651352", "charge": false}
+App received message{"vehicleId": "7", "x": "1", "y": "2", "timestamp": "2020-12-17 03:23:54.656234", "needCharge": false}
+App sent message: {"vehicleId": "7", "taskId": "7", "x": "0", "y": "2", "timestamp": "2020-12-17 03:23:54.660197", "charge": false}
+App received message{"vehicleId": "8", "x": "3", "y": "2", "timestamp": "2020-12-17 03:23:54.659636", "needCharge": false}
+Car 8 reached initial position for its task; now moving towards destination
+App sent message: {"vehicleId": "8", "taskId": "8", "x": "3", "y": "1", "timestamp": "2020-12-17 03:23:54.665769", "charge": false}
+App received message{"vehicleId": "9", "x": "1", "y": "3", "timestamp": "2020-12-17 03:23:54.664699", "needCharge": false}
+App sent message: {"vehicleId": "9", "taskId": "9", "x": "0", "y": "3", "timestamp": "2020-12-17 03:23:54.673809", "charge": false}
+App received message{"vehicleId": "10", "x": "3", "y": "2", "timestamp": "2020-12-17 03:23:54.670063", "needCharge": false}
+Car 10 reached initial position for its task; now moving towards destination
+App sent message: {"vehicleId": "10", "taskId": "10", "x": "2", "y": "1", "timestamp": "2020-12-17 03:23:54.685394", "charge": false}
+App received message{"vehicleId": "11", "x": "2", "y": "2", "timestamp": "2020-12-17 03:23:54.670108", "needCharge": false}
+Car 11 reached initial position for its task; now moving towards destination
+App sent message: {"vehicleId": "11", "taskId": "11", "x": "3", "y": "3", "timestamp": "2020-12-17 03:23:54.693774", "charge": false}
+App received message{"vehicleId": "12", "x": "3", "y": "3", "timestamp": "2020-12-17 03:23:54.671036", "needCharge": false}
+Car 12 reached initial position for its task; now moving towards destination
+App sent message: {"vehicleId": "12", "taskId": "12", "x": "2", "y": "3", "timestamp": "2020-12-17 03:23:54.704534", "charge": false}
+App received message{"vehicleId": "14", "x": "2", "y": "1", "timestamp": "2020-12-17 03:23:54.679958", "needCharge": false}
+App sent message: {"vehicleId": "14", "taskId": "14", "x": "2", "y": "0", "timestamp": "2020-12-17 03:23:54.710063", "charge": false}
+App received message{"vehicleId": "13", "x": "2", "y": "0", "timestamp": "2020-12-17 03:23:54.677970", "needCharge": false}
+App sent message: {"vehicleId": "13", "taskId": "13", "x": "3", "y": "0", "timestamp": "2020-12-17 03:23:54.714129", "charge": false}
+App received message{"vehicleId": "0", "x": "2", "y": "2", "timestamp": "2020-12-17 03:23:54.709563", "needCharge": false}
+App sent message: {"vehicleId": "0", "taskId": "0", "x": "3", "y": "2", "timestamp": "2020-12-17 03:23:54.716511", "charge": false}
+App received message{"vehicleId": "1", "x": "1", "y": "3", "timestamp": "2020-12-17 03:23:54.722480", "needCharge": false}
+Car 1 reached initial position for its task; now moving towards destination
+App sent message: {"vehicleId": "1", "taskId": "1", "x": "0", "y": "2", "timestamp": "2020-12-17 03:23:54.724608", "charge": false}
+App received message{"vehicleId": "2", "x": "1", "y": "3", "timestamp": "2020-12-17 03:23:54.732774", "needCharge": false}
+Car 2 reached initial position for its task; now moving towards destination
+App sent message: {"vehicleId": "2", "taskId": "2", "x": "0", "y": "2", "timestamp": "2020-12-17 03:23:54.734505", "charge": false}
+App received message{"vehicleId": "3", "x": "1", "y": "1", "timestamp": "2020-12-17 03:23:54.737385", "needCharge": false}
+App sent message: {"vehicleId": "3", "taskId": "3", "x": "0", "y": "0", "timestamp": "2020-12-17 03:23:54.738875", "charge": false}
+App received message{"vehicleId": "4", "x": "1", "y": "2", "timestamp": "2020-12-17 03:23:54.747564", "needCharge": false}
+Car 4 reached initial position for its task; now moving towards destination
+App sent message: {"vehicleId": "4", "taskId": "4", "x": "2", "y": "1", "timestamp": "2020-12-17 03:23:54.749934", "charge": false}
+App received message{"vehicleId": "5", "x": "1", "y": "2", "timestamp": "2020-12-17 03:23:54.753916", "needCharge": false}
+App sent message: {"vehicleId": "5", "taskId": "5", "x": "2", "y": "2", "timestamp": "2020-12-17 03:23:54.756988", "charge": false}
+App received message{"vehicleId": "6", "x": "3", "y": "3", "timestamp": "2020-12-17 03:23:54.755177", "needCharge": false}
+Car 6 reached initial position for its task; now moving towards destination
+App sent message: {"vehicleId": "6", "taskId": "6", "x": "2", "y": "2", "timestamp": "2020-12-17 03:23:54.762159", "charge": false}
+App received message{"vehicleId": "7", "x": "0", "y": "2", "timestamp": "2020-12-17 03:23:54.764970", "needCharge": false}
+Car 7 reached initial position for its task; now moving towards destination
+App sent message: {"vehicleId": "7", "taskId": "7", "x": "1", "y": "3", "timestamp": "2020-12-17 03:23:54.766081", "charge": false}
+App received message{"vehicleId": "8", "x": "3", "y": "1", "timestamp": "2020-12-17 03:23:54.770263", "needCharge": false}
+Woohoo! Car 8 finished its task: start: (3, 2)stop: (3, 1)
+App sent message: {"vehicleId": "8", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:54.772157", "charge": false}
+App received message{"vehicleId": "9", "x": "0", "y": "3", "timestamp": "2020-12-17 03:23:54.784571", "needCharge": false}
+Car 9 reached initial position for its task; now moving towards destination
+App sent message: {"vehicleId": "9", "taskId": "9", "x": "1", "y": "2", "timestamp": "2020-12-17 03:23:54.787682", "charge": false}
+App received message{"vehicleId": "10", "x": "2", "y": "1", "timestamp": "2020-12-17 03:23:54.798424", "needCharge": false}
+App sent message: {"vehicleId": "10", "taskId": "10", "x": "1", "y": "0", "timestamp": "2020-12-17 03:23:54.800278", "charge": false}
+App received message{"vehicleId": "11", "x": "3", "y": "3", "timestamp": "2020-12-17 03:23:54.805423", "needCharge": false}
+Woohoo! Car 11 finished its task: start: (2, 2)stop: (3, 3)
+App sent message: {"vehicleId": "11", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:54.807567", "charge": false}
+App received message{"vehicleId": "14", "x": "2", "y": "0", "timestamp": "2020-12-17 03:23:54.818964", "needCharge": false}
+Car 14 reached initial position for its task; now moving towards destination
+App sent message: {"vehicleId": "14", "taskId": "14", "x": "1", "y": "1", "timestamp": "2020-12-17 03:23:54.822081", "charge": false}
+App received message{"vehicleId": "12", "x": "2", "y": "3", "timestamp": "2020-12-17 03:23:54.819876", "needCharge": false}
+App sent message: {"vehicleId": "12", "taskId": "12", "x": "1", "y": "3", "timestamp": "2020-12-17 03:23:54.832759", "charge": false}
+App received message{"vehicleId": "0", "x": "3", "y": "2", "timestamp": "2020-12-17 03:23:54.821183", "needCharge": false}
+Car 0 reached initial position for its task; now moving towards destination
+App sent message: {"vehicleId": "0", "taskId": "0", "x": "2", "y": "1", "timestamp": "2020-12-17 03:23:54.836120", "charge": false}
+App received message{"vehicleId": "13", "x": "3", "y": "0", "timestamp": "2020-12-17 03:23:54.819760", "needCharge": false}
+Car 13 reached initial position for its task; now moving towards destination
+App sent message: {"vehicleId": "13", "taskId": "13", "x": "2", "y": "1", "timestamp": "2020-12-17 03:23:54.840385", "charge": false}
+App received message{"vehicleId": "1", "x": "0", "y": "2", "timestamp": "2020-12-17 03:23:54.828731", "needCharge": false}
+App sent message: {"vehicleId": "1", "taskId": "1", "x": "0", "y": "1", "timestamp": "2020-12-17 03:23:54.844201", "charge": false}
+App received message{"vehicleId": "2", "x": "0", "y": "2", "timestamp": "2020-12-17 03:23:54.840633", "needCharge": false}
+Woohoo! Car 2 finished its task: start: (1, 3)stop: (0, 2)
+App sent message: {"vehicleId": "2", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:54.850191", "charge": false}
+App received message{"vehicleId": "3", "x": "0", "y": "0", "timestamp": "2020-12-17 03:23:54.845773", "needCharge": false}
+Car 3 reached initial position for its task; now moving towards destination
+App sent message: {"vehicleId": "3", "taskId": "3", "x": "1", "y": "1", "timestamp": "2020-12-17 03:23:54.860813", "charge": false}
+App received message{"vehicleId": "4", "x": "2", "y": "1", "timestamp": "2020-12-17 03:23:54.857291", "needCharge": false}
+App sent message: {"vehicleId": "4", "taskId": "4", "x": "3", "y": "0", "timestamp": "2020-12-17 03:23:54.865271", "charge": false}
+App received message{"vehicleId": "6", "x": "2", "y": "2", "timestamp": "2020-12-17 03:23:54.865856", "needCharge": false}
+App sent message: {"vehicleId": "6", "taskId": "6", "x": "2", "y": "1", "timestamp": "2020-12-17 03:23:54.869009", "charge": false}
+App received message{"vehicleId": "5", "x": "2", "y": "2", "timestamp": "2020-12-17 03:23:54.866008", "needCharge": false}
+App sent message: {"vehicleId": "5", "taskId": "5", "x": "3", "y": "2", "timestamp": "2020-12-17 03:23:54.876434", "charge": false}
+App received message{"vehicleId": "7", "x": "1", "y": "3", "timestamp": "2020-12-17 03:23:54.872944", "needCharge": false}
+Woohoo! Car 7 finished its task: start: (0, 2)stop: (1, 3)
+App sent message: {"vehicleId": "7", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:54.879220", "charge": false}
+App received message{"vehicleId": "9", "x": "1", "y": "2", "timestamp": "2020-12-17 03:23:54.892170", "needCharge": false}
+App sent message: {"vehicleId": "9", "taskId": "9", "x": "1", "y": "1", "timestamp": "2020-12-17 03:23:54.893471", "charge": false}
+App received message{"vehicleId": "10", "x": "1", "y": "0", "timestamp": "2020-12-17 03:23:54.905238", "needCharge": false}
+App sent message: {"vehicleId": "10", "taskId": "10", "x": "0", "y": "0", "timestamp": "2020-12-17 03:23:54.907700", "charge": false}
+App received message{"vehicleId": "14", "x": "1", "y": "1", "timestamp": "2020-12-17 03:23:54.932819", "needCharge": false}
+App sent message: {"vehicleId": "14", "taskId": "14", "x": "0", "y": "2", "timestamp": "2020-12-17 03:23:54.935264", "charge": false}
+App received message{"vehicleId": "12", "x": "1", "y": "3", "timestamp": "2020-12-17 03:23:54.938776", "needCharge": false}
+Woohoo! Car 12 finished its task: start: (3, 3)stop: (1, 3)
+App sent message: {"vehicleId": "12", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:54.940224", "charge": false}
+App received message{"vehicleId": "0", "x": "2", "y": "1", "timestamp": "2020-12-17 03:23:54.947752", "needCharge": false}
+App sent message: {"vehicleId": "0", "taskId": "0", "x": "1", "y": "1", "timestamp": "2020-12-17 03:23:54.952995", "charge": false}
+App received message{"vehicleId": "13", "x": "2", "y": "1", "timestamp": "2020-12-17 03:23:54.947877", "needCharge": false}
+App sent message: {"vehicleId": "13", "taskId": "13", "x": "2", "y": "2", "timestamp": "2020-12-17 03:23:54.957481", "charge": false}
+App received message{"vehicleId": "1", "x": "0", "y": "1", "timestamp": "2020-12-17 03:23:54.952275", "needCharge": false}
+App sent message: {"vehicleId": "1", "taskId": "1", "x": "0", "y": "0", "timestamp": "2020-12-17 03:23:54.962168", "charge": false}
+App received message{"vehicleId": "3", "x": "1", "y": "1", "timestamp": "2020-12-17 03:23:54.968892", "needCharge": false}
+App sent message: {"vehicleId": "3", "taskId": "3", "x": "1", "y": "2", "timestamp": "2020-12-17 03:23:54.974917", "charge": false}
+App received message{"vehicleId": "4", "x": "3", "y": "0", "timestamp": "2020-12-17 03:23:54.970352", "needCharge": false}
+Woohoo! Car 4 finished its task: start: (1, 2)stop: (3, 0)
+App sent message: {"vehicleId": "4", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:54.979573", "charge": false}
+App received message{"vehicleId": "6", "x": "2", "y": "1", "timestamp": "2020-12-17 03:23:54.979077", "needCharge": false}
+Woohoo! Car 6 finished its task: start: (3, 3)stop: (2, 1)
+App sent message: {"vehicleId": "6", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:54.989231", "charge": false}
+App received message{"vehicleId": "5", "x": "3", "y": "2", "timestamp": "2020-12-17 03:23:54.982672", "needCharge": false}
+Woohoo! Car 5 finished its task: start: (0, 1)stop: (3, 2)
+App sent message: {"vehicleId": "5", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:55.001403", "charge": false}
+App received message{"vehicleId": "9", "x": "1", "y": "1", "timestamp": "2020-12-17 03:23:54.998874", "needCharge": false}
+Woohoo! Car 9 finished its task: start: (0, 3)stop: (1, 1)
+App sent message: {"vehicleId": "9", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:55.009787", "charge": false}
+App received message{"vehicleId": "10", "x": "0", "y": "0", "timestamp": "2020-12-17 03:23:55.014602", "needCharge": false}
+Woohoo! Car 10 finished its task: start: (3, 2)stop: (0, 0)
+App sent message: {"vehicleId": "10", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:55.018483", "charge": false}
+App received message{"vehicleId": "14", "x": "0", "y": "2", "timestamp": "2020-12-17 03:23:55.042721", "needCharge": false}
+App sent message: {"vehicleId": "14", "taskId": "14", "x": "0", "y": "3", "timestamp": "2020-12-17 03:23:55.045826", "charge": false}
+App received message{"vehicleId": "0", "x": "1", "y": "1", "timestamp": "2020-12-17 03:23:55.063151", "needCharge": false}
+Woohoo! Car 0 finished its task: start: (3, 2)stop: (1, 1)
+App sent message: {"vehicleId": "0", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:55.066248", "charge": false}
+App received message{"vehicleId": "13", "x": "2", "y": "2", "timestamp": "2020-12-17 03:23:55.065288", "needCharge": false}
+Woohoo! Car 13 finished its task: start: (3, 0)stop: (2, 2)
+App sent message: {"vehicleId": "13", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:55.079448", "charge": false}
+App received message{"vehicleId": "1", "x": "0", "y": "0", "timestamp": "2020-12-17 03:23:55.068954", "needCharge": false}
+Woohoo! Car 1 finished its task: start: (1, 3)stop: (0, 0)
+App sent message: {"vehicleId": "1", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:55.085547", "charge": false}
+App received message{"vehicleId": "3", "x": "1", "y": "2", "timestamp": "2020-12-17 03:23:55.083070", "needCharge": false}
+App sent message: {"vehicleId": "3", "taskId": "3", "x": "1", "y": "3", "timestamp": "2020-12-17 03:23:55.095080", "charge": false}
+App received message{"vehicleId": "14", "x": "0", "y": "3", "timestamp": "2020-12-17 03:23:55.152362", "needCharge": false}
+Woohoo! Car 14 finished its task: start: (2, 0)stop: (0, 3)
+App sent message: {"vehicleId": "14", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:55.156376", "charge": false}
+App received message{"vehicleId": "3", "x": "1", "y": "3", "timestamp": "2020-12-17 03:23:55.198498", "needCharge": false}
+Woohoo! Car 3 finished its task: start: (0, 0)stop: (1, 3)
+App sent message: {"vehicleId": "3", "taskId": "-1", "x": "-1", "y": "-1", "timestamp": "2020-12-17 03:23:55.200709", "charge": false}
+All 15 tasks have been accomplished; terminating

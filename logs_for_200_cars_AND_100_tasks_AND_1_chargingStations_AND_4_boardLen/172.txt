@@ -1,0 +1,2 @@
+Car with id 172 intialized
+Car 172 is retired

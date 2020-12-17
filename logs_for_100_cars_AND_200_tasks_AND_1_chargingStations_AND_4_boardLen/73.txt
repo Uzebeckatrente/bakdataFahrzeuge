@@ -1,0 +1,20 @@
+Car with id 73 intialized
+Car 73 received new task: {"taskId": "73", "vehicleId": "73", "startX": "2", "startY": "0", "stopX": "3", "stopY": "0", "timestamp": "2020-12-17 03:25:14.794630"}
+Car 73 received message: {"vehicleId": "73", "taskId": "73", "x": "1", "y": "0", "timestamp": "2020-12-17 03:25:25.235607", "charge": false} in context of task 73
+Car 73 sent current pos: {"vehicleId": "73", "x": "1", "y": "0", "timestamp": "2020-12-17 03:25:25.385912", "needCharge": false} in context of task 73
+Car 73 received message: {"vehicleId": "73", "taskId": "73", "x": "2", "y": "0", "timestamp": "2020-12-17 03:25:33.644032", "charge": false} in context of task 73
+Car 73 sent current pos: {"vehicleId": "73", "x": "2", "y": "0", "timestamp": "2020-12-17 03:25:33.808709", "needCharge": false} in context of task 73
+Car 73 received message: {"vehicleId": "73", "taskId": "73", "x": "3", "y": "0", "timestamp": "2020-12-17 03:25:44.444447", "charge": false} in context of task 73
+Car 73 sent current pos: {"vehicleId": "73", "x": "3", "y": "0", "timestamp": "2020-12-17 03:25:44.593089", "needCharge": false} in context of task 73
+Car 73 finished task 73 in 3 steps
+
+
+Car 73 received new task: {"taskId": "164", "vehicleId": "73", "startX": "2", "startY": "1", "stopX": "3", "stopY": "2", "timestamp": "2020-12-17 03:25:56.652913"}
+Car 73 received message: {"vehicleId": "73", "taskId": "164", "x": "2", "y": "1", "timestamp": "2020-12-17 03:25:56.711186", "charge": false} in context of task 164
+Car 73 sent current pos: {"vehicleId": "73", "x": "2", "y": "1", "timestamp": "2020-12-17 03:25:56.862208", "needCharge": false} in context of task 164
+Car 73 received message: {"vehicleId": "73", "taskId": "164", "x": "3", "y": "2", "timestamp": "2020-12-17 03:26:09.103823", "charge": false} in context of task 164
+Car 73 sent current pos: {"vehicleId": "73", "x": "3", "y": "2", "timestamp": "2020-12-17 03:26:09.370178", "needCharge": false} in context of task 164
+Car 73 finished task 164 in 2 steps
+
+
+Car 73 is retired

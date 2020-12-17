@@ -1,0 +1,18 @@
+Car with id 70 intialized
+Car 70 received new task: {"taskId": "70", "vehicleId": "70", "startX": "3", "startY": "2", "stopX": "0", "stopY": "1", "timestamp": "2020-12-17 03:25:14.523538"}
+Car 70 received message: {"vehicleId": "70", "taskId": "70", "x": "1", "y": "1", "timestamp": "2020-12-17 03:25:24.947591", "charge": false} in context of task 70
+Car 70 sent current pos: {"vehicleId": "70", "x": "1", "y": "1", "timestamp": "2020-12-17 03:25:25.121876", "needCharge": false} in context of task 70
+Car 70 received message: {"vehicleId": "70", "taskId": "70", "x": "2", "y": "2", "timestamp": "2020-12-17 03:25:33.315693", "charge": false} in context of task 70
+Car 70 sent current pos: {"vehicleId": "70", "x": "2", "y": "2", "timestamp": "2020-12-17 03:25:33.475683", "needCharge": false} in context of task 70
+Car 70 received message: {"vehicleId": "70", "taskId": "70", "x": "3", "y": "2", "timestamp": "2020-12-17 03:25:43.916181", "charge": false} in context of task 70
+Car 70 sent current pos: {"vehicleId": "70", "x": "3", "y": "2", "timestamp": "2020-12-17 03:25:44.060591", "needCharge": false} in context of task 70
+Car 70 received message: {"vehicleId": "70", "taskId": "70", "x": "2", "y": "1", "timestamp": "2020-12-17 03:25:56.347726", "charge": false} in context of task 70
+Car 70 sent current pos: {"vehicleId": "70", "x": "2", "y": "1", "timestamp": "2020-12-17 03:25:56.540759", "needCharge": false} in context of task 70
+Car 70 received message: {"vehicleId": "70", "taskId": "70", "x": "1", "y": "1", "timestamp": "2020-12-17 03:26:08.776751", "charge": false} in context of task 70
+Car 70 sent current pos: {"vehicleId": "70", "x": "1", "y": "1", "timestamp": "2020-12-17 03:26:08.901293", "needCharge": false} in context of task 70
+Car 70 received message: {"vehicleId": "70", "taskId": "70", "x": "0", "y": "1", "timestamp": "2020-12-17 03:26:19.414570", "charge": false} in context of task 70
+Car 70 sent current pos: {"vehicleId": "70", "x": "0", "y": "1", "timestamp": "2020-12-17 03:26:19.614634", "needCharge": false} in context of task 70
+Car 70 finished task 70 in 6 steps
+
+
+Car 70 is retired

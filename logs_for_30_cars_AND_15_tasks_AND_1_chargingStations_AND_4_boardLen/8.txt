@@ -1,0 +1,10 @@
+Car with id 8 intialized
+Car 8 received new task: {"taskId": "8", "vehicleId": "8", "startX": "3", "startY": "2", "stopX": "3", "stopY": "1", "timestamp": "2020-12-17 03:23:53.606481"}
+Car 8 received message: {"vehicleId": "8", "taskId": "8", "x": "3", "y": "2", "timestamp": "2020-12-17 03:23:54.551043", "charge": false} in context of task 8
+Car 8 sent current pos: {"vehicleId": "8", "x": "3", "y": "2", "timestamp": "2020-12-17 03:23:54.659636", "needCharge": false} in context of task 8
+Car 8 received message: {"vehicleId": "8", "taskId": "8", "x": "3", "y": "1", "timestamp": "2020-12-17 03:23:54.665769", "charge": false} in context of task 8
+Car 8 sent current pos: {"vehicleId": "8", "x": "3", "y": "1", "timestamp": "2020-12-17 03:23:54.770263", "needCharge": false} in context of task 8
+Car 8 finished task 8 in 2 steps
+
+
+Car 8 is retired

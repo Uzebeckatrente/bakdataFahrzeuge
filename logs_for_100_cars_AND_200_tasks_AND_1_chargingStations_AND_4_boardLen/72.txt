@@ -1,0 +1,20 @@
+Car with id 72 intialized
+Car 72 received new task: {"taskId": "72", "vehicleId": "72", "startX": "1", "startY": "1", "stopX": "0", "stopY": "1", "timestamp": "2020-12-17 03:25:14.692848"}
+Car 72 received message: {"vehicleId": "72", "taskId": "72", "x": "1", "y": "1", "timestamp": "2020-12-17 03:25:25.118554", "charge": false} in context of task 72
+Car 72 sent current pos: {"vehicleId": "72", "x": "1", "y": "1", "timestamp": "2020-12-17 03:25:25.304663", "needCharge": false} in context of task 72
+Car 72 received message: {"vehicleId": "72", "taskId": "72", "x": "0", "y": "1", "timestamp": "2020-12-17 03:25:33.545810", "charge": false} in context of task 72
+Car 72 sent current pos: {"vehicleId": "72", "x": "0", "y": "1", "timestamp": "2020-12-17 03:25:33.755883", "needCharge": false} in context of task 72
+Car 72 finished task 72 in 2 steps
+
+
+Car 72 received new task: {"taskId": "125", "vehicleId": "72", "startX": "0", "startY": "0", "stopX": "2", "stopY": "0", "timestamp": "2020-12-17 03:25:44.304863"}
+Car 72 received message: {"vehicleId": "72", "taskId": "125", "x": "0", "y": "0", "timestamp": "2020-12-17 03:25:44.349867", "charge": false} in context of task 125
+Car 72 sent current pos: {"vehicleId": "72", "x": "0", "y": "0", "timestamp": "2020-12-17 03:25:44.498930", "needCharge": false} in context of task 125
+Car 72 received message: {"vehicleId": "72", "taskId": "125", "x": "1", "y": "0", "timestamp": "2020-12-17 03:25:56.557065", "charge": false} in context of task 125
+Car 72 sent current pos: {"vehicleId": "72", "x": "1", "y": "0", "timestamp": "2020-12-17 03:25:56.713124", "needCharge": false} in context of task 125
+Car 72 received message: {"vehicleId": "72", "taskId": "125", "x": "2", "y": "0", "timestamp": "2020-12-17 03:26:09.001885", "charge": false} in context of task 125
+Car 72 sent current pos: {"vehicleId": "72", "x": "2", "y": "0", "timestamp": "2020-12-17 03:26:09.239177", "needCharge": false} in context of task 125
+Car 72 finished task 125 in 3 steps
+
+
+Car 72 is retired

@@ -1,0 +1,20 @@
+Car with id 68 intialized
+Car 68 received new task: {"taskId": "68", "vehicleId": "68", "startX": "2", "startY": "2", "stopX": "3", "stopY": "1", "timestamp": "2020-12-17 03:25:14.162873"}
+Car 68 received message: {"vehicleId": "68", "taskId": "68", "x": "2", "y": "2", "timestamp": "2020-12-17 03:25:24.764305", "charge": false} in context of task 68
+Car 68 sent current pos: {"vehicleId": "68", "x": "2", "y": "2", "timestamp": "2020-12-17 03:25:24.942006", "needCharge": false} in context of task 68
+Car 68 received message: {"vehicleId": "68", "taskId": "68", "x": "3", "y": "1", "timestamp": "2020-12-17 03:25:32.844803", "charge": false} in context of task 68
+Car 68 sent current pos: {"vehicleId": "68", "x": "3", "y": "1", "timestamp": "2020-12-17 03:25:33.231108", "needCharge": false} in context of task 68
+Car 68 finished task 68 in 2 steps
+
+
+Car 68 received new task: {"taskId": "123", "vehicleId": "68", "startX": "1", "startY": "0", "stopX": "1", "stopY": "1", "timestamp": "2020-12-17 03:25:43.649944"}
+Car 68 received message: {"vehicleId": "68", "taskId": "123", "x": "2", "y": "0", "timestamp": "2020-12-17 03:25:43.692586", "charge": false} in context of task 123
+Car 68 sent current pos: {"vehicleId": "68", "x": "2", "y": "0", "timestamp": "2020-12-17 03:25:43.898512", "needCharge": false} in context of task 123
+Car 68 received message: {"vehicleId": "68", "taskId": "123", "x": "1", "y": "0", "timestamp": "2020-12-17 03:25:55.922722", "charge": false} in context of task 123
+Car 68 sent current pos: {"vehicleId": "68", "x": "1", "y": "0", "timestamp": "2020-12-17 03:25:56.120879", "needCharge": false} in context of task 123
+Car 68 received message: {"vehicleId": "68", "taskId": "123", "x": "1", "y": "1", "timestamp": "2020-12-17 03:26:08.389540", "charge": false} in context of task 123
+Car 68 sent current pos: {"vehicleId": "68", "x": "1", "y": "1", "timestamp": "2020-12-17 03:26:08.631666", "needCharge": false} in context of task 123
+Car 68 finished task 123 in 3 steps
+
+
+Car 68 is retired

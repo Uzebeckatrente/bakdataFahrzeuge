@@ -7,27 +7,55 @@ class Fahrzeug():
 	'''
 	Class representing vehicles in this simulation
 	'''
-	def __init__(self, id,x,y,secondsToPerformMove,secondsForRecharge,movesUntilRecharge, visual,logsRoot, tileSize = -1):
-		self.x = x;
-		self.y = y;
+	def __init__(self, id,initialX,initialY,secondsToPerformMove,secondsForRecharge,movesUntilRecharge, visual,logsRoot, tileSize = -1):
+		'''
+
+		:param id: unique car id
+		:param initialX: initial x coordinate
+		:param initialY: initial x coordinate
+		:param secondsToPerformMove: how long Fahrzeug objects should sleep before informing the Streams App that they have moved
+		This simulates a vehicle moving from place to place, which takes time
+		:param secondsForRecharge: how long Fahrzeug objects should sleep when they have low battery and have reached a charging port
+		This simulates a vehicle charging, which takes time
+		:param movesUntilRecharge: how many moves a car can make before it signals to the Streams App that it has low battery
+		:param visual: whether the app is in visual mode
+		:param logsRoot: root of the log file which this car will create for itself
+		:param tileSize: size of squares so the car knows how to draw itself
+		'''
+
+		#assign passed values as instance variables in Fahrzeug object
+		self.x = initialX;
+		self.y = initialY;
 		self.visual = visual;
-		self.charging = False;
 		self.id = str(id);
 		self.secondsToPerformMove = secondsToPerformMove;
+		self.movesUntilRecharge = movesUntilRecharge
+		self.secondsForRecharge = secondsForRecharge;
+		self.logsRoot = logsRoot;
+
+
+
+		#initialize Kafka Consumers of nextPositions and newTasks topics
 		self.nextPositionConsumer = KafkaConsumer('nextPositions')
 		self.newTaskConsumer = KafkaConsumer('newTasks')
 		self.producer = KafkaProducer(bootstrap_servers='localhost:9092')
-		self.movesUntilRecharge = movesUntilRecharge
-		self.secondsForRecharge=secondsForRecharge;
-		self.logsRoot = logsRoot;
+
+		# Initialize log file for this car according to its unique id
 		self.logFile = open(logsRoot+"/"+self.id+".txt","w")
 		self.logFile.write("Car with id " + str(id) + " intialized\n");
+
+		#it is not assigned to a task upon initialization
 		self.currentTask = "-1";
 
-		self.stepsForCurrentTask = 0;
-		self.finishes = 0;
+		#initialize other parameters of Fahrzeug object
+		self.charging = False; #not charging on initialization
+		self.stepsForCurrentTask = 0; #how many steps car needs to perform its current task
+		self.battery = self.movesUntilRecharge; #battery starts fully charged
 
 
+		#initialize values and load images, only relevant to visual-mode
+		#The car is normally yellow; however, when it has low battery it turns red with green tinted windows
+		#When it is charging, it stays red with green tinted windows, but becomes tiny
 		if visual:
 			self.carNormal = pg.image.load("./src/img/carNormal.png")
 			self.carNormal = pg.transform.scale(self.carNormal, (int(tileSize * 0.95), int(tileSize * 0.95)))
@@ -37,21 +65,32 @@ class Fahrzeug():
 
 			self.carCharging = pg.image.load("./src/img/carLowBattery.png")
 			self.carCharging = pg.transform.scale(self.carLowBattery, (int(tileSize * 0.4), int(tileSize * 0.4)))
-		else:
-			if secondsToPerformMove < 0.001:
-				self.secondsToPerformMove = 0.001
-		self.battery = self.movesUntilRecharge;
+
+		#car sleeps for at least 0.001 seconds upon move performance to avoid potential synchronicity bugs
+		if secondsToPerformMove < 0.001:
+			self.secondsToPerformMove = 0.001
+
 
 	def initThreads(self):
+		'''
+		Initializes threads used by kafka consumers.
+		:return:
+		'''
+
+		# thread for consuming new tasks from streams app
 		self.newTaskThread = threading.Thread(target=self.listenForNewTask)
 		self.newTaskThread.start()
+
+		# thread for consuming position updates from streams app
 		self.listeningThread = threading.Thread(target=self.listenForNextPosition)
 		self.listeningThread.start()
 
 
-
-
 	def finish(self):
+		'''
+		When the car has finished its task and there are none left to do, it logs this and its main thread ends
+		:return:
+		'''
 
 		print("recd finish",self.id,self.currentTask)
 		if self.currentTask != "-1":
@@ -67,39 +106,64 @@ class Fahrzeug():
 		this method will be triggered
 		:return:
 		'''
+
+		# this for-loop serves for the thread to consume the nextPositions topic.
+		# Whenever there is a new message in this topic, a new round of the for-loop is triggered
+		# When a new message is consumed that the streams app is telling a car of the next position it must go to
+		# If that car is not this car, then the message is ignored
 		for mes in self.nextPositionConsumer:
+
+			# if 10 seconds pass betewen messages consumed then there has probably been an error.
+			# This is a safe-guard against deadlocking
 			self.nextPositionConsumer.consumer_timeout_ms=10000
+
+			#decode message from streams app
 			mesStr = mes.value.decode()
 			mes = json.loads(mesStr);
+
+			#if the car about which this message has been sent is not this car object, then the message is ignored
 			if str(self.id) != mes["vehicleId"]: continue;
+			#if this position is reached, then the message pertains to this car object
+
+			#if the x and y coordinates sent from the app are -1, then the car has reached its target and there are
+			#no more tasks to do. It may now stop consuming kafka topics and decease.
 			if int(mes["x"]) == -1 and int(mes["y"]) == -1:
 				print("received desist")
 				break;
 
 
+			#if it is conceivable that, because of asynchony of kafka topics, that a car
+			#will receive its next move before it receives its new task, upon the completion
+			# of a task. If this happens, it will sleep until the new task has been processed.
 			while mes["taskId"] != self.currentTask:
-				time.sleep(0.1);
+				time.sleep(0.01);
 				print("Wires crossed in task generation; sleeping")
 
 			self.logFile.write("Car " + self.id + " received message: " + mesStr+" in context of task " + self.currentTask+"\n");
 
+			#move to the position that the streams app said to move to
 			self.x = int(mes["x"]);
 			self.y = int(mes["y"]);
+
+			#if "charge" is set, then it reached a charging port. It now charges
 			if mes["charge"]:
-				self.charging = True;
+				self.charging = True;#visual parameter
 				self.logFile.write("Car " + self.id + " is charging\n");
+
+				#in visual mode, charging takes time
 				if self.visual:
 					time.sleep(self.secondsForRecharge);
+				#after charging, the battery is fully charged.
 				self.battery=self.movesUntilRecharge;
 
+			#it need not charge
 			else:
-				self.charging = False;
-
+				self.charging = False;#visual parameter
 				time.sleep(self.secondsToPerformMove);
 				self.battery += -1;
-				if self.battery <= 0:
-					self.sendCriticalBatteryMessage()
-			self.sendCurrentPositionToApp()
+				# if self.battery <= 0:
+				# 	self.sendCriticalBatteryMessage()
+			self.sendCurrentPositionToApp(self.battery <= 0)
 		print("Done listening for new positions "+self.id,self.currentTask)
 
 	def listenForNewTask(self):
@@ -137,6 +201,7 @@ class Fahrzeug():
 
 	def sendCriticalBatteryMessage(self):
 		'''
+		#Depricatd - this functionality is now encompassed by sendCurrentPositionToApp
 		If the battery of the Fahrzeug reaches 0, it will send a message into the criticalBatteryTopic,
 		and will be directed towards the nearest charging port
 		:return:
@@ -151,7 +216,7 @@ class Fahrzeug():
 		self.producer.send('criticalBatteryTopic', str.encode(positionDictJson))  #
 		self.producer.flush()
 
-	def sendCurrentPositionToApp(self):
+	def sendCurrentPositionToApp(self, needCharge):
 		'''
 		This method pushes a message into the updateAppWithCurrentPositions topic for the app to consume
 		:return:
@@ -161,7 +226,8 @@ class Fahrzeug():
 			"vehicleId":self.id,
 			"x":str(self.x),
 			"y":str(self.y),
-			"timestamp":str(datetime.datetime.now())
+			"timestamp":str(datetime.datetime.now()),
+			"needCharge":needCharge
 		}
 
 		self.stepsForCurrentTask += 1;
