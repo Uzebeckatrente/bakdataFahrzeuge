@@ -92,7 +92,7 @@ class Fahrzeug():
 		:return:
 		'''
 
-		print("recd finish",self.id,self.currentTask)
+		print("Thread for Car",self.id," is finished; last task was",self.currentTask)
 		if self.currentTask != "-1":
 			self.logFile.write("Car " + self.id + " finished task " + self.currentTask + " in " + str(self.stepsForCurrentTask) + " steps\n\n\n")
 		self.logFile.write("Car " + self.id + " is retired\n")
@@ -128,7 +128,6 @@ class Fahrzeug():
 			#if the x and y coordinates sent from the app are -1, then the car has reached its target and there are
 			#no more tasks to do. It may now stop consuming kafka topics and decease.
 			if int(mes["x"]) == -1 and int(mes["y"]) == -1:
-				print("received desist")
 				break;
 
 
@@ -164,7 +163,7 @@ class Fahrzeug():
 				# if self.battery <= 0:
 				# 	self.sendCriticalBatteryMessage()
 			self.sendCurrentPositionToApp(self.battery <= 0)
-		print("Done listening for new positions "+self.id,self.currentTask)
+		print("Car",self.id," is done listening for new positions")
 
 	def listenForNewTask(self):
 		'''
@@ -173,35 +172,43 @@ class Fahrzeug():
 		:return:
 		'''
 
+		# this for-loop serves for the thread to consume the newTasks topic.
+		# Whenever there is a new message in this topic, a new round of the for-loop is triggered
+		# When a new message is consumed that the streams app is telling a car of the next position it must go to
+		# If that car is not this car, then the message is ignored
 		for mes in self.newTaskConsumer:
+
+			# if 10 seconds pass betewen messages consumed then there has probably been an error.
+			# This is a safe-guard against deadlocking
 			self.newTaskConsumer.consumer_timeout_ms = 10000
+
+			#decode message from streams app
 			mesStr = mes.value.decode()
 			mes = json.loads(mesStr);
 			if str(self.id) != mes["vehicleId"]: continue;
 			if mes["startX"] == mes["startY"] == -1:
+				# if the x and y coordinates sent from the app are -1, then the car has reached its target and there are
+				# no more tasks to do. It may now stop consuming kafka topics and decease.
 				break;
+
 			if self.currentTask != "-1":
 				self.logFile.write("Car " + self.id + " finished task " + self.currentTask + " in " + str(self.stepsForCurrentTask) + " steps\n\n\n")
+
+
+			#set car-task-specific logging variables
 			self.stepsForCurrentTask = 0;
-			self.logFile.write("Car " + self.id + " received new task: " + mesStr+"\n");
 			self.currentTask = mes["taskId"];
-		print("Done listening for new tasks",self.id)
+
+			self.logFile.write("Car " + self.id + " received new task: " + mesStr + "\n");
+		print("Car",self.id,"is done listening for new tasks")
 
 
-
-	def draw(self, screen, tileSize):
-		if self.charging:
-			screen.blit(self.carCharging, (self.x * tileSize, self.y * tileSize))
-		elif self.battery > 0:
-			screen.blit(self.carNormal, (self.x * tileSize, self.y * tileSize))
-		else:
-			screen.blit(self.carLowBattery, (self.x * tileSize, self.y * tileSize))
 
 
 
 	def sendCriticalBatteryMessage(self):
 		'''
-		#Depricatd - this functionality is now encompassed by sendCurrentPositionToApp
+		#Depricated - this functionality is now encompassed by sendCurrentPositionToApp
 		If the battery of the Fahrzeug reaches 0, it will send a message into the criticalBatteryTopic,
 		and will be directed towards the nearest charging port
 		:return:
@@ -218,6 +225,12 @@ class Fahrzeug():
 
 	def sendCurrentPositionToApp(self, needCharge):
 		'''
+		This method pushes a message into the updateAppWithCurrentPositions queue
+		It indicates which car it is and where it is, as well as whether it needs a charge
+		:param needCharge:
+		:return:
+		'''
+		'''
 		This method pushes a message into the updateAppWithCurrentPositions topic for the app to consume
 		:return:
 		'''
@@ -230,8 +243,29 @@ class Fahrzeug():
 			"needCharge":needCharge
 		}
 
-		self.stepsForCurrentTask += 1;
+		# kafka syntax for producing a message in a topic
 		positionDictJson = json.dumps(positionDict)
 		self.logFile.write("Car "+self.id+" sent current pos: "+positionDictJson+" in context of task " + self.currentTask+"\n")
 		self.producer.send('updateAppWithCurrentPositions', str.encode(positionDictJson))#
 		self.producer.flush()
+
+		#each time a move is sent to the app, a step is officially taken (for logging purposes)
+		self.stepsForCurrentTask += 1;
+
+
+
+	def draw(self, screen, tileSize):
+		'''
+		In visual-mode, car draws itself in pygame
+		The car is normally yellow; however, when it has low battery it turns red with green tinted windows
+		When it is charging, it stays red with green tinted windows, but becomes tiny
+		:param screen:
+		:param tileSize:
+		:return:
+		'''
+		if self.charging:
+			screen.blit(self.carCharging, (self.x * tileSize, self.y * tileSize))
+		elif self.battery > 0:
+			screen.blit(self.carNormal, (self.x * tileSize, self.y * tileSize))
+		else:
+			screen.blit(self.carLowBattery, (self.x * tileSize, self.y * tileSize))

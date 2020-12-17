@@ -386,8 +386,11 @@ class RoutenSteuerung():
 			self.accomplishedTasks += 1;
 			taskForFahrzeug.finish()
 
-			#Assign a new task to this car. If assignTaskToFahrzeug returns -1 at the first position, then all tasks are done
-			#And this will recurse back to the consumer loop, which will break out.
+			'''
+			Assign a new task to this car. If assignTaskToFahrzeug returns -1 at the first position, then all tasks are done
+			And this will recurse back to the consumer loop, which will break out.
+			newTask is None, then there are no more tasks to assign to the car.
+			'''
 			simulationOver, newTask = self.assignTaskToFahrzeug(fzId);
 			if simulationOver == -1:
 				return simulationOver;
@@ -440,7 +443,7 @@ class RoutenSteuerung():
 				break;
 
 		self.finished = True;  # telling visual mode it can quit
-		print("Done consuming Position Updates")
+		print("Streaming app is done consuming Position Updates")
 
 	def sendDeceaseToCriticalBatteryAlarmConsumer(self):
 		'''

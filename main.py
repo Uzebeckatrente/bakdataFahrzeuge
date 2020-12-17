@@ -9,13 +9,13 @@ tileSize = 50
 
 
 #run-time parameters relevant for both visual and non-visual mode
-visual = False
+visual = True
 movesUntilRecharge = 10;
 numChargingStations = 1;
 boardLength = 4;
-numCars = 200;
-numTasks = 100;
-if movesUntilRecharge > boardLength:
+numCars = 5;
+numTasks = 4;
+if movesUntilRecharge < boardLength:
 	raise ValueError("The length of the board is longer than the number of moves until recharge. This might lead to deadlock if a car"
 					 "can not span the board in a single charge and perpetually goes to and from the charging station")
 

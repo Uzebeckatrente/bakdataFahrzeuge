@@ -1,0 +1,18 @@
+Car with id 0 intialized
+Car 0 received new task: {"taskId": "0", "vehicleId": "0", "startX": "0", "startY": "3", "stopX": "1", "stopY": "0", "timestamp": "2020-12-17 03:44:20.546850"}
+Car 0 received message: {"vehicleId": "0", "taskId": "0", "x": "0", "y": "1", "timestamp": "2020-12-17 03:44:20.691605", "charge": false} in context of task 0
+Car 0 sent current pos: {"vehicleId": "0", "x": "0", "y": "1", "timestamp": "2020-12-17 03:44:20.798566", "needCharge": false} in context of task 0
+Car 0 received message: {"vehicleId": "0", "taskId": "0", "x": "0", "y": "2", "timestamp": "2020-12-17 03:44:20.817266", "charge": false} in context of task 0
+Car 0 sent current pos: {"vehicleId": "0", "x": "0", "y": "2", "timestamp": "2020-12-17 03:44:20.923216", "needCharge": false} in context of task 0
+Car 0 received message: {"vehicleId": "0", "taskId": "0", "x": "0", "y": "3", "timestamp": "2020-12-17 03:44:20.928952", "charge": false} in context of task 0
+Car 0 sent current pos: {"vehicleId": "0", "x": "0", "y": "3", "timestamp": "2020-12-17 03:44:21.036747", "needCharge": false} in context of task 0
+Car 0 received message: {"vehicleId": "0", "taskId": "0", "x": "1", "y": "2", "timestamp": "2020-12-17 03:44:21.047139", "charge": false} in context of task 0
+Car 0 sent current pos: {"vehicleId": "0", "x": "1", "y": "2", "timestamp": "2020-12-17 03:44:21.152022", "needCharge": false} in context of task 0
+Car 0 received message: {"vehicleId": "0", "taskId": "0", "x": "1", "y": "1", "timestamp": "2020-12-17 03:44:21.158032", "charge": false} in context of task 0
+Car 0 sent current pos: {"vehicleId": "0", "x": "1", "y": "1", "timestamp": "2020-12-17 03:44:21.263509", "needCharge": false} in context of task 0
+Car 0 received message: {"vehicleId": "0", "taskId": "0", "x": "1", "y": "0", "timestamp": "2020-12-17 03:44:21.266500", "charge": false} in context of task 0
+Car 0 sent current pos: {"vehicleId": "0", "x": "1", "y": "0", "timestamp": "2020-12-17 03:44:21.369984", "needCharge": false} in context of task 0
+Car 0 finished task 0 in 6 steps
+
+
+Car 0 is retired
