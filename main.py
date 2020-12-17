@@ -42,8 +42,8 @@ if visual:
 		doVisual(app, fahrzeuge,boardLength,tileSize)
 	except Exception as e:
 		print(e);
-		print("This system is unable to handle graphics - please try again in visual mode")
-		exit(-1);
+		print("Sorry but your system is unable to handle graphics (or there is some other pygame error) - running on non-visual mode")
+		app.beginSimulation();
 else:
 	app.beginSimulation();
 
